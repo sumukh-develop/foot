@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Details Form</title>
+    <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+    <div class="footwear-container">
+        <h2>ENTER FOOTWEAR DETAILS</h2>
+        <form id="footwearForm">
+
+            <div class="form-group">
+                <label for="category">CATEGORY:</label>
+                <div class="category-options">
+                    <label for="shoe"> <input type="checkbox" id="shoe" name="category[]" value="shoe"> SHOE</label>
+                    <label for="sandal"> <input type="checkbox" id="sandal" name="category[]" value="sandal"> SANDAL</label>
+                    <label for="socks"> <input type="checkbox" id="socks" name="category[]" value="socks"> SOCKS </label>
+                    <label for="all"> <input type="checkbox" id="all" name="category[]" value="all"> ALL</label>
+                    <label for="others"> <input type="checkbox" id="others" name="category[]" value="others"> OTHER </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="footwearName">If other,mention FOOTWEAR NAME:</label>
+                <input type="text" id="footwearName" name="footwearName[]" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="footwearDescription">FOOTWEAR DESCRIPTION:</label>
+                <textarea id="footwearDescription" name="footwearDescription[]" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">PICKUP DATE:</label>
+                <input type="date" id="pickupDate" name="pickupDate[]" required>
+            </div>
+            <div class="form-group">
+                <label for="footwearImage">FOOTWEAR IMAGE:</label>
+                <input type="file" id="footwearImage" name="footwearImage[]" accept="image/*" required>
+            </div>
+
+            
+            
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="scriptssfootwear.js"></script>
+</body>
+</html>
